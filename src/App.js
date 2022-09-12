@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import ChatListItem from './components/ChatListItem.js';
 
@@ -6,10 +6,10 @@ import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import ChatIcon from '@mui/icons-material/Chat';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
-//1:11:28
-export default () => {
 
-  const [chatList, setChatList] = useState([{}, {},{}, {},{}, {},{}, {},{}, {},{}, {}]);
+export default function App() {
+
+  const [chatList] = useState([{}, {},{}]);
 
   return (
     <div className="app-window">
